@@ -1,0 +1,67 @@
+/* ------------------------  common ------------------------ */
+/* global */
+body{margin:0;background-color:#f0f0f0;font-family: Microsoft YaHei !important;font-size:13px;color:#666666;}
+#mainpage{background-color:#FFFFFF;position:relative;margin:0 auto;width:1280px;text-align:left;}
+#subpage{background-color:#FFFFFF;margin:0 auto;text-align:left;}
+
+/* common */
+a:link{color:rgb(0,150,200);text-decoration:none;}
+a:visited{color:rgb(0,150,200);text-decoration:none;}
+a:hover{color:#ff0000;}
+a:active{text-decoration:none;}
+
+.speratediv{clear:both;height:20px}
+
+/* titles */
+.title0{font-size:36px;font-weight:bold;margin-bottom:0px;}
+.title1{font-size:24px;font-weight:bold;margin-bottom:0px;}
+.title2{font-size:18px;font-weight:bold;margin-bottom:0px;}
+.title3{font-size:14px;font-weight:bold;margin-top:0px;}
+
+/* ------------------------  header ------------------------ */
+.header {width:100%; font-size:18px; margin:0px 0px;height:65px; border-bottom:solid #5590D0 1px;}
+.header .middlepic{}
+.header .navigate{float:right; clear:left; position:relative;top:-24px; height:30px; margin:0px 0px;}
+.header .navigate .entry{float:left; margin:0px 40px;}
+
+/* ------------------------  footer ------------------------ */
+.footer{clear:both;text-align:center;height:80px;margin-top:0px;border-top:solid #bbbbbb 1px;font-family: Microsoft YaHei !important;font-size:14px;color:#666666;}
+.footer p{margin-top:10px;}
+.icp{position:relative;top:10px;margin-top:-10px;}
+.footer a{color:#666;text-decoration:none;}
+.footer a:hover{color:#ff0000;text-decoration:none;}
+
+
+/* ------------------------  home ------------------------ */
+.home{clear:both;width:100%;margin:0px 0px;}
+.home .title{clear:both; color:#000;text-align:center;height:32px;font-size:36px; font-weight:bold; }
+.home .titleitaliccontent{margin:20px 30px; width:1200px; color:#888;font-size:18px;font-style: italic; }
+.home .titleitalic{clear:both; color:#aaaaaa;text-align:center;height:32px;font-size:24px; font-weight:bold; font-style: italic; }
+.home .description{float:left;text-indent:26px;width:1050px; font-size:16px; margin-left:30px;padding:10px 10px;}
+
+
+/* ------------------------  content ------------------------ */
+/*content block*/
+.content{clear:both;width:950px;margin:0px 30px 5px 130px;position:relative;left:30px;}
+.content h3{font-size:20px;text-decoration:none; color:rgb(80,80,80);margin-top:20px;margin-bottom:20px;}
+.content p{	padding-top:0px;margin:0px auto;}
+.content .description{float:left;text-indent:26px;font-size:16px; margin-left:30px;padding:10px 10px;line-height:200%; }
+.content .description .title{font-weight:bold}
+.content .topdownborderpic{border-top-width:1px;border-bottom-width:1px;border-color:gray;border-style:solid;border-left-width:0px;border-right-width:0px;}
+
+/* developer */
+.developer{clear:both;width:1100px; margin:0px 50px 5px 80px;}
+.developer .horidiv {display:inline-block;height:200px; margin:5px 0px 5px 0px;}
+.developer .horidiv  .picback{width:260px;height:170px; margin:0px 5px 0px 5px;border-radius:8px;}
+.developer .horidiv  .pic{display:inline-block;width:250px;height:160px;margin:0px 0px 30px 10px;border:0px;border-radius:8px;cursor:pointer}
+.developer .horidiv  .pictext{position:relative;left:0px; top:0px; height:20px; text-align:center;font-size:16px;}
+.developer .navigate{float:left; clear:left; position:relative; left:120px; height:30px; margin:0px 10px;}
+.developer .navigate .entry{float:left; margin:0px 50px; font-size:18px; }
+
+        
+/* solution */
+.solution{clear:both;width:1100px; margin:0px 50px 5px 80px;}
+.solution .horidiv {display:inline-block; position:relative; left:30px; height:350px; margin:5px 0px 5px 0px;}
+.solution .horidiv  .picback{left:50px; width:350px;height:200px; margin:0px 5px 0px 5px;border-radius:8px;}
+.solution .horidiv  .pic{display:inline-block;width:300px;height:200px;margin:0px 0px 30px 10px;border:0px;border-radius:8px;}
+.solution .horidiv  .pictext{position:relative;left:20px; top:0px; width:280px; line-height:200%; font-size:15px; }

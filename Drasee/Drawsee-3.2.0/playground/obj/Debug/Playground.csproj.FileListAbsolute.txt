@@ -1,0 +1,7 @@
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\bin\Playground.dll.config
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\bin\Playground.dll
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\bin\Playground.pdb
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\obj\Debug\Playground.csprojAssemblyReference.cache
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\obj\Debug\Playground.csproj.CoreCompileInputs.cache
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\obj\Debug\Playground.dll
+D:\LYH\Product\DrawseeGis\Ts\Projects\Drawsee\Playground\obj\Debug\Playground.pdb

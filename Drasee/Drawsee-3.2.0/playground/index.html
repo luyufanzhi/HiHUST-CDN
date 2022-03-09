@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>开发演练</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no" />
+</head>
+<body style="overflow:hidden;overflow-x:hidden">
+    <div>
+        <div id="javascriptEditor" style="border: 1px solid grey; border-image: none;position:absolute;"></div>
+        <div id="topBar" style="position:absolute; top:6px; left: 10px;">
+            <button id="buttonRun" style="width:80px;height:28px;cursor:pointer;" onclick="runSample();">运行</button>
+            <button id="buttonRestore" style="width:80px;height:28px;cursor:pointer;" onclick="loadSample();">恢复</button>
+        </div>
+    </div>
+
+    <div id="sampleDiv" style="position:absolute; height:100%; bottom:0px; right: 0px;">
+        <iframe id="sampleFrame" src="" style="width:100%;height:100%;"></iframe>
+    </div>
+
+    <div id="sampleIndexDiv" style="position:absolute; width:1300px; height:700px; bottom:80px; right: 0px;">
+        <iframe id="sampleIndexFrame" src="sampleIndex.html" style="width:100%;height:100%;overflow:hidden;overflow-x:hidden"></iframe>
+    </div>
+
+    <div id="bottomBar" style="position:absolute; bottom:20px; height:20px; left: 10px;background:rgba(0,0,0,0.2);">
+        <input id="checkCode" type="checkbox" checked onclick="updateWindowLayout()" />
+        <span style="position: relative;left: -4px;top: -2px;font-size: 14px;color: white;cursor: pointer" onclick="checkCode.checked=!checkCode.checked;updateWindowLayout()">代码</span>
+        <input id="checkIndex" type="checkbox" checked onclick="updateWindowLayout()"/>
+        <span style="position: relative;left: -4px;top: -2px;font-size: 14px;color: white;cursor: pointer" onclick="checkIndex.checked=!checkIndex.checked;updateWindowLayout()">索引</span>
+    </div>
+
+    <script src="./jslib/monaco/vs/loader.js"></script>
+    <script type="text/javascript" src="./Playground.js"></script>
+
+    <script>
+        window.onload = function () {
+            loadSample('basic/scene/start', true);
+
+            // delay hide sample page
+            setTimeout(function () {
+                setSampleIndexVisible(false);
+            }, 2000);
+        }
+
+        function checkAndShowSampleHtml() {
+            var strCode = parent.window.getRunCode();
+            var useToolbar = strCode.indexOf('\"toolbarDiv\"') > 0;
+
+            showSampleHtml(useToolbar);
+        }
+
+        function onClickSampleLink(sampleName) {
+            if (!sampleName)
+                return;
+
+            setSampleIndexVisible(false);
+
+            loadSample(sampleName, true);
+        }
+
+        function setSampleIndexVisible(visible) {
+            document.getElementById("checkIndex").checked = false;
+            updateWindowLayout();
+        }
+    </script>
+
+    <!--<iframe width="0" height="0" src="/jslib/trace.html?dev_playground" style="position:absolute; left:-50px;"></iframe>-->
+</body>
+</html>
